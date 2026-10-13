@@ -10,7 +10,7 @@ Google Drive の URL またはファイル ID から、この PC の Google ド�
 git clone https://github.com/kabukawa/gdopen.git
 ```
 
-クローンしたディレクトリで `gdopen.cmd` を実行する。Python 3 が PATH にあれば、追加のインストールは要らない。
+クローンしたディレクトリで `gdopen.cmd` または `gdopen.sh` を実行する。Python 3 が PATH にあれば、追加のインストールは要らない。`gdopen.sh` は Git Bash と WSL から使う。どちらも Windows の Python を起動する。
 
 ## 使い方
 
@@ -19,6 +19,8 @@ Python 3 が PATH にあること。ドライブアプリが起動し、目的�
 ```text
 gdopen.cmd <URL またはファイル ID>
 gdopen.cmd --print <URL またはファイル ID>
+bash gdopen.sh <URL またはファイル ID>
+bash gdopen.sh --print <URL またはファイル ID>
 python gdopen.py --self-test
 ```
 
